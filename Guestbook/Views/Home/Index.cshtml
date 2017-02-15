@@ -1,0 +1,17 @@
+﻿@model List<Guestbook.Models.Entry>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<table>
+    @foreach (var entry in Model)
+    {
+        <tr>
+            <td>@entry.FirstName</td>
+            <td>@entry.LastName</td>
+        </tr>
+    }
+</table>
+
+
+<a href="/home/checkin">Check in!</a>

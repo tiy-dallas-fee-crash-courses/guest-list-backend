@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Checkin";
+}
+
+<h2>Checkin</h2>
+
+@using (Html.BeginForm())
+{
+    <label for="firstName">First Name:</label>
+    @Html.TextBox("firstName");
+
+    <label for="lastName">Last Name:</label>
+    @Html.TextBox("lastName");
+
+    <button>Check in</button>
+}
